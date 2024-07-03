@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+  
+/* Setup
+/* Customize */
+
+:root {
+--UnsetVariable           : unset;
+
+--PagePaddingTop          : 105px;
+--PagePaddingLeft         : 20mm;
+--PagePaddingRight        : 20mm;
+--PagePaddingBottom       : 80px;
+
+--PageColor               : #ffac44;
+--PageBackground          : url("");
+--footerimage             : url("");
+
+/*FONT VARIABLES====================================================================*/
+--MainFont                : "Orbitron", sans-serif;
+--LargeFont               : "Orbitron", sans-serif;
+--MediumFont              : "Orbitron", sans-serif;
+--NoteFont                : "Orbitron", sans-serif;
+--DescriptiveFont         : "Orbitron", sans-serif;
+--QuoteFont               : "Orbitron", sans-serif;
+--TableFont               : "Orbitron", sans-serif;
+
+--SmallFontSize           : .318cm;
+--GeneralFontColor        : var(--white);
+--LargeFontColor          : orange;
+--TitleFontColor          : white;
+--RegularOutline          : 0px black;
+
+/*ColorDefinitions===================================================================*/
+
+--moss										:   rgba( 89, 115,  83,  1);	
+--teal										:   rgba( 45,  80,  85,  1);	
+--irrigo									:   rgba(111,  39, 114,  1);
+--violant									:   rgba(135,  34,  44,  1);
+--cosmogone								    :   rgba(195,  93,  26,  1);
+--peligin									:   rgba( 82,  82, 109,  1);
+--apocyan									:   rgba( 39, 140, 130,  1);
+--viric										:   rgba( 56, 138,  54,  1);
+--gant										:   rgba(100,  80,  65,  1);
+--bright									:	rgba( 95, 149, 155,  1);
+--medium									:	rgba( 95, 149, 155, .8);	
+--highlight								    :	rgba(185, 225, 228,  1);
+--white 									:   rgba(255, 255, 255,  1);	
+--light										:	rgba(237, 227, 210,  1);	
+--dark										:	rgba( 40,  37,  32,  1);
+--black 									:   rgba( 11,  15,  11,  1);
+--transparent                               :   rgba(  0,   0,   0,  0);
+/*Headlines===================================================================*/
+--h1TextAlign             : center;
+--h1FontType              : var(--LargeFont);
+--h1FontSize              :	70px;	
+--h1FontColor             :	var(--TitleFontColor);	
+--h1FontOutline           : 2.5px black;
+
+--h2TextAlign             : center;
+--h2FontType              : var(--MediumFont);
+--h2FontSize              :	50px;	
+--h2FontColor             :	var(--TitleFontColor);	
+--h2FontOutline           : 1.5px black;
+
+--h3TextAlign             : left;
+--h3FontType              : var(--MainFont);
+--h3FontSize              :	40px;	
+--h3FontColor             :	var(--GeneralFontColor);
+--h3FontOutline           : var(--RegularOutline);
+
+--h4TextAlign             : left;
+--h4FontType              : var(--MainFont);
+--h4FontSize              :	33px;	
+--h4FontColor             :	var(--GeneralFontColor);	
+--h4FontOutline           : var(--RegularOutline);
+
+--h5TextAlign             : left;
+--h5FontType              : var(--MainFont);
+--h5FontSize              :	20px;	
+--h5FontColor             :	var(--GeneralFontColor);
+--h5FontOutline           : var(--RegularOutline);
+
+--h6TextAlign             : left;
+--h6FontType              : var(--MainFont);
+--h6FontSize              :	var(----SmallFontSize);
+--h6FontColor             :	var(--GeneralFontColor);	
+--h6FontOutline           : var(--RegularOutline);
+
+
+
+/*Note Headlines===================================================================*/
+--h1NoteTextAlign         : center;
+--h1NoteFontType          : var(--LargeFont);
+--h1NoteFontSize          :	70px;	
+--h1NoteFontColor         :	var(--LargeFontColor);
+--h1NoteFontOutline       : 2.5px black;
+
+--h2NoteTextAlign         : center;
+--h2NoteFontType          : var(--MediumFont);
+--h2NoteFontSize          :	50px;	
+--h2NoteFontColor         :	var(--LargeFontColor);
+--h2NoteFontOutline       : 1.5px black;
+
+--h3NoteTextAlign         : center;
+--h3NoteFontType          : var(--MainFont);
+--h3NoteFontSize          :	40px;	
+--h3NoteFontColor         :	var(--LargeFontColor);
+--h3NoteFontOutline       : var(--RegularOutline);
+
+--h4NoteTextAlign         : center;
+--h4NoteFontType          : var(--MainFont); 	
+--h4NoteFontSize          :	33px;	
+--h4NoteFontColor         :	var(--LargeFontColor);
+--h4NoteFontOutline       : var(--RegularOutline);
+
+--h5NoteTextAlign         : left;
+--h5NoteFontType          : var(--MainFont);
+--h5NoteFontSize          :	20px;	
+--h5NoteFontColor         :	var(--GeneralFontColor);
+--h5NoteFontOutline       : var(--RegularOutline);
+
+--h6NoteTextAlign         : left;
+--h6NoteFontType          : var(--MainFont);
+--h6NoteFontSize          :	var(----SmallFontSize);
+--h6NoteFontColor         :	var(--GeneralFontColor);
+--h6NoteFontOutline       : var(--RegularOutline);
+
+
+/*Descriptive Headlines===================================================================*/
+--h1DescriptiveTextAlign  : center;
+--h1DescriptiveFontType   : var(--LargeFont);
+--h1DescriptiveFontSize   : 70px;	
+--h1DescriptiveFontColor  : var(--LargeFontColor);
+--h1DescriptiveFontOutline: 2.5px black;
+
+--h2DescriptiveTextAlign  : center;
+--h2DescriptiveFontType   : var(--MediumFont);
+--h2DescriptiveFontSize   : 50px;	
+--h2DescriptiveFontColor  : var(--LargeFontColor);
+--h2DescriptiveFontOutline: 1.5px black;
+
+--h3DescriptiveTextAlign  : center;
+--h3DescriptiveFontType   : var(--MainFont);
+--h3DescriptiveFontSize   : 40px;	
+--h3DescriptiveFontColor  : var(--LargeFontColor);
+--h3DescriptiveFontOutline: var(--RegularOutline);
+
+--h4DescriptiveTextAlign  : center;
+--h4DescriptiveFontType   : var(--MainFont);
+--h4DescriptiveFontSize   : 33px;	
+--h4DescriptiveFontColor  : var(--LargeFontColor);
+--h4DescriptiveFontOutline: var(--RegularOutline);
+
+--h5DescriptiveTextAlign  : left;
+--h5DescriptiveFontType   : var(--MainFont);
+--h5DescriptiveFontSize   :	20px;	
+--h5DescriptiveFontColor  :	var(--GeneralFontColor);
+--h5DescriptiveFontOutline: var(--RegularOutline);
+
+--h6DescriptiveTextAlign  : left;
+--h6DescriptiveFontType   : var(--MainFont);
+--h6DescriptiveFontSize   :	var(----SmallFontSize);
+--h6DescriptiveFontColor  :	var(--GeneralFontColor);
+--h6DescriptiveFontOutline: var(--RegularOutline);
+
+
+
+/*Paragraph Font===================================================================*/
+--ParagraphFontType       : var(--MainFont);
+--ParagraphFontSize       : var(--SmallFontSize);
+--ParagraphFontColor      :	var(--GeneralFontColor);
+--ParagraphFontOutline    : 0px white;
+
+
+
+/*TABLES============================================================================*/
+--TableFirstRowFontType   : var(--TableFont);
+--TableFirstRowFontSize   :	var(--SmallFontSize);
+--TableFirstRowFontColor  :	var(--GeneralFontColor);
+--TableFirstRowFontOutline: var(--RegularOutline);
+--TableFirstRowColor      : black;
+
+--TableOddRowFontType     : var(--TableFont);
+--TableOddRowFontSize     :	var(--SmallFontSize);
+--TableOddRowFontColor    :	var(--GeneralFontColor);
+--TableOddRowFontOutline  : var(--RegularOutline);
+--TableOddRowColor        : linear-gradient(to left, var(--PageColor) 100%, var(--transparent) 100%);
+
+--TableEvenRowFontType    : var(--TableFont);
+--TableEvenRowFontSize    :	var(--SmallFontSize);
+--TableEvenRowFontColor   :	var(--GeneralFontColor);
+--TableEvenRowFontOutline : var(--RegularOutline);
+--TableEvenRowColor       : var(--UnsetVariable);
+
+
+/*PAGE NUMBER======================================================================*/
+--PageNumberMargin        : 46px;
+--PageNumberMarginBottom  : 42px;
+--PageNumberSize          : 26px;
+--PageNumberColor         : black;
+
+
+
+/*FOOTNOTE=========================================================================*/
+--FootnoteMarginBottom    : 46px;
+--FootnoteFontSize        : 25px;
+--FootnoteFontColor       : black;
+
+
+
+/*DESCRIPTIVE======================================================================*/
+--DescriptiveBackground   : gray;
+--DescriptiveFontSize     : 20px;
+--DescriptiveFontColor    : black;
+--DescriptiveBackgroundImage : url();
+--DescriptivePadding      : 10px 12px 12px 12px;
+--DescriptiveBorderRadius : 20px;
+--DescriptiveOutline      : var(--UnsetVariable);
+--DescriptiveBorder       : var(--UnsetVariable);
+
+
+
+/*NOTE=============================================================================*/
+--NoteBackground          : gray;
+--NoteFontSize            : var(--SmallFontSize);
+--NoteFontColor           : white;
+--NoteBackgroundImage     : url();
+--NotePadding             : 10px 12px 12px 12px;
+--NoteBorderRadius        : 20px;
+--NoteOutline             : var(--UnsetVariable);
+--NoteBorder              : var(--UnsetVariable);
+
+
+
+/*QUOTE============================================================================*/
+--QuoteBackground          : unset;
+--QuoteFontSize            : var(--SmallFontSize);
+--QuoteFontColor           : var(--GeneralFontColor);
+--QuoteBackgroundImage     : url();
+--QuotePadding             : 10px 12px 12px 12px;
+--QuoteBorderRadius        : 0px;
+--QuoteBorderTop           : var(--UnsetVariable); var(--UnsetVariable);
+--QuoteBorderBottom        : var(--UnsetVariable);
+
+
+/*MonsterStatBlocks================================================================*/
+--MonsterBackgroundColor   : var(--violant);
+--MonsterBackgroundImage   : url();
+
+--MonsterDoubleColonColor  : var(--GeneralFontColor);
+--MonsterTableColor        : var(--GeneralFontColor);
+--MonsterFontType          : var(--MailFont);
+--MonsterFontColor         : var(--GeneralFontColor);
+--MonsterHeadlineUnderline : 2px solid #444444;
+
+--MonsterBorderImage       : url("https://i.imgur.com/vuugbRY.png");
+
+--MonsterGraphicsVisibility: visible;
+--MonsterGraphicsHeight    : 6px;
+--MonsterGraphicsMargin    : 0.12cm 0px;
+--MonsterGraphicsUrl       : url("/assets/redTriangle.png");
+--MonsterGraphicsSize      : 100% 100%;
+--MonsterGraphicsBorder    : none;
+--MonsterGraphicsFilter    : hue-rotate(000deg) brightness(100%) saturate(0%);
+
+
+/*Monster TABLES===================================================================*/
+--MonsterTableFirstRowFontType   : var(--TableFont);
+--MonsterTableFirstRowFontSize   : var(--SmallFontSize);
+--MonsterTableFirstRowFontColor  : var(--GeneralFontColor);
+--MonsterTableFirstRowFontOutline: var(--RegularOutline);
+--MonsterTableFirstRowColor      : linear-gradient(to left, var(--transparent) 100%, var(--transparent) 100%);
+
+--MonsterTableOddRowFontType     : var(--TableFont);
+--MonsterTableOddRowFontSize     : var(--SmallFontSize);
+--MonsterTableOddRowFontColor    : var(--GeneralFontColor);
+--MonsterTableOddRowFontOutline  : var(--RegularOutline);
+--MonsterTableOddRowColor        : linear-gradient(to left, --MonsterBackgroundColor 100%, --MonsterBackgroundColor 100%);
+
+--MonsterTableEvenRowFontType    : var(--TableFont);
+--MonsterTableEvenRowFontSize    : var(--SmallFontSize);
+--MonsterTableEvenRowFontColor   : var(--GeneralFontColor);
+--MonsterTableEvenRowFontOutline : var(--RegularOutline);
+--MonsterTableEvenRowColor       : var(--UnsetVariable);
+
+
+}
+
+
+
+
+/* END OF VARIABLES DO NOT EDIT BELOW UNLESS YOU KNOW WHAT YOU ARE DOING! */
+/* END OF VARIABLES DO NOT EDIT BELOW UNLESS YOU KNOW WHAT YOU ARE DOING! */
+/* END OF VARIABLES DO NOT EDIT BELOW UNLESS YOU KNOW WHAT YOU ARE DOING! */
+/* END OF VARIABLES DO NOT EDIT BELOW UNLESS YOU KNOW WHAT YOU ARE DOING! */
+
+  
+/*  -----  PAGE SETTINGS -----  */
+
+.page{
+	width                   : var(--pagewidth);
+	height                  : var(--pageheight);
+  padding-top             : var(--PagePaddingTop);
+  padding-left            : var(--PagePaddingLeft);
+  padding-right           : var(--PagePaddingRight);
+  padding-bottom          : var(--PagePaddingBottom);
+  text-align              : justify;
+  
+  background-color        : var(--PageColor);
+  background-image        : var(--PageBackground);
+  background-size         : 102% 102%;
+  background-position     : center center;
+  
+  font-size               : var(--ParagraphFontSize);
+  color                   : var(--ParagraphFontColor);
+  font-family             : var(--ParagraphFontType);
+  -webkit-text-stroke     : var(--ParagraphFontOutline);
+}
+
+
+.page:after {
+	background-image	      : var(--footerimage);
+}
+
+.page h1 + p::first-letter {
+  all                     : var(--UnsetVariable);
+}
+
+
+
+
+/* Sections (Note, Descriptive, Quote) */
+.page .note {
+  background-color        : var(--NoteBackground);
+  color                   : var(--NoteFontColor);
+  font-size               : var(--NoteFontSize);
+  font-family             : var(--NoteFont);
+  background-image        : var(--NoteBackgroundImage);
+	padding									: var(--NotePadding);
+	border-radius						: var(--NoteBorderRadius);
+	outline									: var(--NoteOutline);
+ 	border									: var(--NoteBorder);
+	box-shadow							: var(--UnsetVariable);
+}
+
+.page .descriptive {
+  background-color        : var(--DescriptiveBackground);
+  color                   : var(--DescriptiveFontColor);
+  font-size               : var(--DescriptiveFontSize);
+  font-family             : var(--DescriptiveFont);
+  background-image        : var(--DescriptiveBackgroundImage);
+	padding									: var(--DescriptivePadding);
+	border-radius						: var(--DescriptiveBorderRadius);
+	outline									: var(--DescriptiveOutline);
+ 	border									: var(--DescriptiveBorder);
+	box-shadow							: var(--UnsetVariable);
+}
+
+.page .quote {
+  background-color        : var(--QuoteBackground);
+  color                   : var(--QuoteFontColor);
+  font-size               : var(--QuoteFontSize);
+  font-family             : var(--QuoteFont);
+  background-image        : var(--QuoteBackgroundImage);
+	padding									: var(--QuotePadding);
+	border-radius						: var(--QuoteBorderRadius);
+  border-bottom           : var(--QuoteBorderBottom);
+  border-top              : var(--QuoteBorderTop);
+	outline									: var(--QuoteOutline);
+ 	border									: var(--QuoteBorder);
+	box-shadow							: var(--UnsetVariable);
+}
+
+
+
+
+/* Headlines ============================================*/
+.page h1 {
+  text-align              : var(--h1TextAlign);
+  font-family             : var(--h1FontType);
+  font-size               : var(--h1FontSize);
+  color                   : var(--h1FontColor);
+  -webkit-text-stroke     : var(--h1FontOutline);
+}
+  .page h2 {
+  text-align              : var(--h2TextAlign);
+  font-family             : var(--h2FontType);
+  font-size               : var(--h2FontSize);
+  color                   : var(--h2FontColor);
+  -webkit-text-stroke     : var(--h2FontOutline);
+}
+  .page h3 {
+  text-align              : var(--h3TextAlign);
+  font-family             : var(--h3FontType);
+  font-size               : var(--h3FontSize);
+  color                   : var(--h3FontColor);
+  -webkit-text-stroke     : var(--h3FontOutline);
+  border-bottom           : var(--UnsetVariable);
+}
+  .page h4 {
+  text-align              : var(--h4TextAlign);
+  font-family             : var(--h4FontType);
+  font-size               : var(--h4FontSize);
+  color                   : var(--h4FontColor);
+  -webkit-text-stroke     : var(--h4FontOutline);
+}
+
+  .page h5 {
+  text-align              : var(--h5TextAlign);
+  font-family             : var(--h5FontType);
+  font-size               : var(--h5FontSize);
+  color                   : var(--h5FontColor);
+  -webkit-text-stroke     : var(--h5FontOutline);
+}
+
+  .page h6 {
+  text-align              : var(--h6TextAlign);
+  font-family             : var(--h6FontType);
+  font-size               : var(--h6FontSize);
+  color                   : var(--h6FontColor);
+  -webkit-text-stroke     : var(--h6FontOutline);
+}
+
+
+
+/* Note Headlines ============================================*/
+.page .note h1 {
+  text-align              : var(--h1NoteTextAlign);
+  font-family             : var(--h1NoteFontType);
+  font-size               : var(--h1NoteFontSize);
+  color                   : var(--h1NoteFontColor);
+  -webkit-text-stroke     : var(--h1NoteFontOutline);
+}
+  .page .note h2 {
+  text-align              : var(--h2NoteTextAlign);
+  font-family             : var(--h2NoteFontType);
+  font-size               : var(--h2NoteFontSize);
+  color                   : var(--h2NoteFontColor);
+  -webkit-text-stroke     : var(--h2NoteFontOutline);
+}
+  .page .note h3 {
+  text-align              : var(--h3NoteTextAlign);
+  font-family             : var(--h3NoteNoteFontType);
+  font-size               : var(--h3NoteFontSize);
+  color                   : var(--h3NoteFontColor);
+  -webkit-text-stroke     : var(--h3NoteFontOutline);
+}
+  .page .note h4 {
+  text-align              : var(--h4NoteTextAlign);
+  font-family             : var(--h4NoteFontType);
+  font-size               : var(--h4NoteFontSize);
+  color                   : var(--h4NoteFontColor);
+  -webkit-text-stroke     : var(--h4NoteFontOutline);
+}
+
+  .page .note h5 {
+  text-align              : var(--h5NoteTextAlign);
+  font-family             : var(--h5NoteFontType);
+  font-size               : var(--h5NoteFontSize);
+  color                   : var(--h5NoteFontColor);
+  -webkit-text-stroke     : var(--h5NoteFontOutline);
+}
+
+  .page .note h6 {
+  text-align              : var(--h6NoteTextAlign);
+  font-family             : var(--h6NoteFontType);
+  font-size               : var(--h6NoteFontSize);
+  color                   : var(--h6NoteFontColor);
+  -webkit-text-stroke     : var(--h6NoteFontOutline);
+}
+
+
+
+/* Descriptive Headlines ============================================*/
+.page .descriptive h1 {
+  text-align              : var(--h1DescriptiveTextAlign);
+  font-family             : var(--h1DescriptiveFontType);
+  font-size               : var(--h1DescriptiveFontSize);
+  color                   : var(--h1DescriptiveFontColor);
+  -webkit-text-stroke     : var(--h1DescriptiveFontOutline);
+}
+  .page .descriptive h2 {
+  text-align              : var(--h2DescriptiveTextAlign);
+  font-family             : var(--h2DescriptiveFontType);
+  font-size               : var(--h2DescriptiveFontSize);
+  color                   : var(--h2DescriptiveFontColor);
+  -webkit-text-stroke     : var(--h2DescriptiveFontOutline);
+}
+  .page .descriptive h3 {
+  text-align              : var(--h3DescriptiveTextAlign);
+  font-family             : var(--h3DescriptiveFontType);
+  font-size               : var(--h3DescriptiveFontSize);
+  color                   : var(--h3DescriptiveFontColor);
+  -webkit-text-stroke     : var(--h3DescriptiveFontOutline);
+}
+  .page .descriptive h4 {
+  text-align              : var(--h4DescriptiveTextAlign);
+  font-family             : var(--h4DescriptiveFontType);
+  font-size               : var(--h4DescriptiveFontSize);
+  color                   : var(--h4DescriptiveFontColor);
+  -webkit-text-stroke     : var(--h4DescriptiveFontOutline);
+}
+
+  .page .descriptive h5 {
+  text-align              : var(--h5DescriptiveTextAlign);
+  font-family             : var(--h5DescriptiveFontType);
+  font-size               : var(--h5DescriptiveFontSize);
+  color                   : var(--h5DescriptiveFontColor);
+  -webkit-text-stroke     : var(--h5DescriptiveFontOutline);
+}
+
+  .page .descriptive h6 {
+  text-align              : var(--h6DescriptiveTextAlign);
+  font-family             : var(--h6DescriptiveFontType);
+  font-size               : var(--h6DescriptiveFontSize);
+  color                   : var(--h6DescriptiveFontColor);
+  -webkit-text-stroke     : var(--h6DescriptiveFontOutline);
+}
+
+
+/* TABLES ============================================*/
+table tbody tr:nth-child(odd) {
+  font-family             : var(--TableOddRowFontType);
+  font-size               : var(--TableOddRowFontSize);
+  color                   : var(--TableOddRowFontColor);
+  -webkit-text-stroke     : var(--TableOddRowFontOutline);
+  background              : var(--TableOddRowColor);
+}
+
+tr:nth-child(odd) {
+  font-family             : var(--TableFirstRowFontType);
+  font-size               : var(--TableFirstRowFontSize);
+  color                   : var(--TableFirstRowFontColor);
+  -webkit-text-stroke     : var(--TableFirstRowFontOutline);
+  background              : var(--TableFirstRowColor);
+}
+
+table tbody tr:nth-child(even) {
+  font-family             : var(--TableEvenRowFontType);
+  font-size               : var(--TableEvenRowFontSize);
+  color                   : var(--TableEvenRowFontColor);
+  -webkit-text-stroke     : var(--TableEvenRowFontOutline);
+  background              : var(--TableEvenRowColor);
+}
+
+
+
+
+/* Footnotes */
+.page .footnote{
+	text-align	            : left;
+	bottom			            : var(--FootnoteMarginBottom);
+	font-size		            : var(--FootnoteFontSize);
+	color				            : var(--FootnoteFontColor);
+}
+
+.page:nth-child(odd) .footnote{
+	text-align	            : right;
+}
+
+
+/* Page Numbers */
+.page .pageNumber{
+	text-align	            : left;
+	margin-left	            : var(--PageNumberMargin);
+	margin-right            : var(--PageNumberMargin);
+	bottom			            : var(--PageNumberMarginBottom);
+	font-size		            : var(--PageNumberSize);
+	color				            : var(--PageNumberColor);
+}
+.page:nth-child(odd) .pageNumber{
+	text-align	            : right;
+}
+
+
+/* Monster stat block */
+.page .monster.frame {
+  box-shadow              : unset;
+  background-color        : var(--MonsterBackgroundColor);
+  background-image        : var(--MonsterBackgroundImage);
+  font-family             : var(--MonsterFontType);
+  color                   : var(--MonsterFontColor);
+  border-image            : var(--MonsterBorderImage);
+  border-image-slice      : 20;
+  filter                  : hue-rotate(0deg) brightness(100%) saturate(100%) }
+  
+.page .monster.frame dl {
+  color                   : var(--MonsterDoubleColonColor);
+}
+
+.page .monster.frame tr {
+  color                   : var(--MonsterTableColor);
+}
+
+.page .monster.frame h2 {
+  border-bottom           : var(--MonsterHeadlineUnderline);
+}
+
+.page .monster.frame h3 {
+  border-bottom           : var(--MonsterHeadlineUnderline);
+}
+
+.page .monster hr {
+    visibility            : var(--MonsterGraphicsVisibility);
+    height                : var(--MonsterGraphicsHeight);
+    margin                : var(--MonsterGraphicsMargin);
+    background-image      : var(--MonsterGraphicsUrl);
+    background-size       : var(--MonsterGraphicsSize);
+    border                : var(--MonsterGraphicsBorder);
+    filter                : var(--MonsterGraphicsFilter);
+}
+
+/* Monster Stat Block TABLES ============================================*/
+.monster table tbody tr:nth-child(odd) {
+  font-family             : var(--MonsterTableOddRowFontType);
+  font-size               : var(--MonsterTableOddRowFontSize);
+  color                   : var(--MonsterTableOddRowFontColor);
+  -webkit-text-stroke     : var(--MonsterTableOddRowFontOutline);
+  background              : var(--MonsterTableOddRowColor);
+}
+
+.monster tr:nth-child(odd) {
+  font-family             : var(--MonsterTableFirstRowFontType);
+  font-size               : var(--MonsterTableFirstRowFontSize);
+  color                   : var(--MonsterTableFirstRowFontColor);
+  -webkit-text-stroke     : var(--MonsterTableFirstRowFontOutline);
+  background              : var(--MonsterTableFirstRowColor);
+}
+
+.monster table tbody tr:nth-child(even) {
+  font-family             : var(--MonsterTableEvenRowFontType);
+  font-size               : var(--MonsterTableEvenRowFontSize);
+  color                   : var(--MonsterTableEvenRowFontColor);
+  -webkit-text-stroke     : var(--MonsterTableEvenRowFontOutline);
+  background              : var(--MonsterTableEvenRowColor);
+}
+

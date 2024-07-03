@@ -3,50 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dungeon Master Campaigns</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mikołaj 'vengrath' Wojtas - Fantasy Enthusiast</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- You can add more meta tags, links to stylesheets or scripts as needed -->
+    <style>
+        /* Additional inline styles for logo resizing */
+        .logo {
+            position:absolute;
+            max-width: 48px; /* Adjust max-width as needed */
+            margin-top: 0px;
+            margin-left: 64px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to the Dungeon Master's Lair</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
         <nav>
             <ul>
-                <li><a href="#campaigns">Campaigns</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="campaigns">
-        <h2>My Campaigns</h2>
-        <ul>
-            <li>Campaign 1</li>
-            <li>Campaign 2</li>
-            <li>Campaign 3</li>
-            <li>Campaign 4</li>
-            <li>Campaign 5</li>
-            <li>Campaign 6</li>
-            <li>Campaign 7</li>
-        </ul>
-    </section>
-    
-    <section id="publications">
-        <h2>Published Adventures</h2>
-        <ul>
-            <li><a href="#">Adventure 1</a></li>
-            <li><a href="#">Adventure 2</a></li>
-            <li><a href="#">Adventure 3</a></li>
-        </ul>
-    </section>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Dungeon Master for Dungeons & Dragons 5th Edition. I run 7 different campaigns and publish my own adventures.</p>
-    </section>
-    
+    <main>
+        <section class="hero">
+            <h1>Welcome to my Fantasy World!</h1>
+            <p>I am Mikołaj 'vengrath' Wojtas, a passionate fantasy enthusiast and Dungeon Master. Explore my campaigns, check out upcoming sessions, and dive into the realms of fantasy with me.</p>
+        </section>
+
+        <section class="latest-blog-posts">
+            <h2>Latest Blog Posts</h2>
+            <!-- Placeholder for blog posts -->
+            <div class="blog-post">
+                <h3>Blog Post Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero ac justo vestibulum, eu lacinia ex gravida.</p>
+                <a href="blog.html">Read more</a>
+            </div>
+            <!-- Add more blog posts as needed -->
+        </section>
+
+        <section class="campaigns">
+            <h2>Explore My Campaigns</h2>
+            <div class="campaign">
+                <h3>Campaign Title</h3>
+                <p>Description of the campaign. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="campaigns/campaign1.html">View Details</a>
+            </div>
+            <!-- Repeat for each campaign -->
+        </section>
+
+        <section class="releases">
+            <h2>My Campaign Releases</h2>
+            <div class="release">
+                <h3>Release Title</h3>
+                <p>Status: In Progress / Completed</p>
+                <a href="releases/release1.html">Learn More</a>
+            </div>
+            <!-- Repeat for each release -->
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Dungeon Master. All rights reserved.</p>
+        <p>&copy; 2024 Mikołaj 'vengrath' Wojtas. All rights reserved.</p>
     </footer>
 </body>
 </html>
